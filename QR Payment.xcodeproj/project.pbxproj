@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848C65422C2836DD00E54C65 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C65412C2836DD00E54C65 /* Transaction.swift */; };
+		848C65442C283B5500E54C65 /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C65432C283B5500E54C65 /* TransactionManager.swift */; };
 		84CD258B2C22C8CA008EFC0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD258A2C22C8CA008EFC0E /* AppDelegate.swift */; };
 		84CD258D2C22C8CA008EFC0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD258C2C22C8CA008EFC0E /* SceneDelegate.swift */; };
-		84CD258F2C22C8CA008EFC0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD258E2C22C8CA008EFC0E /* ViewController.swift */; };
+		84CD258F2C22C8CA008EFC0E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD258E2C22C8CA008EFC0E /* MainViewController.swift */; };
 		84CD25922C22C8CA008EFC0E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84CD25912C22C8CA008EFC0E /* Base */; };
 		84CD25942C22C8CB008EFC0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CD25932C22C8CB008EFC0E /* Assets.xcassets */; };
 		84CD25972C22C8CB008EFC0E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84CD25962C22C8CB008EFC0E /* Base */; };
 		84CD25A22C22C8CB008EFC0E /* QR_PaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD25A12C22C8CB008EFC0E /* QR_PaymentTests.swift */; };
 		84CD25AC2C22C8CB008EFC0E /* QR_PaymentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD25AB2C22C8CB008EFC0E /* QR_PaymentUITests.swift */; };
 		84CD25AE2C22C8CB008EFC0E /* QR_PaymentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD25AD2C22C8CB008EFC0E /* QR_PaymentUITestsLaunchTests.swift */; };
+		84E68F872C2540B9009778ED /* TrxHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E68F862C2540B9009778ED /* TrxHistoryViewController.swift */; };
+		84E68F892C2540FE009778ED /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E68F882C2540FE009778ED /* BillViewController.swift */; };
+		84E68F8B2C25411B009778ED /* TrxReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E68F8A2C25411B009778ED /* TrxReceiptViewController.swift */; };
+		84E68F8F2C2545F6009778ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E68F8E2C2545F6009778ED /* User.swift */; };
+		84E68F922C25488E009778ED /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E68F912C25488E009778ED /* UserManager.swift */; };
+		84E68F942C25492D009778ED /* QR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E68F932C25492D009778ED /* QR.swift */; };
+		84E68F962C254951009778ED /* QRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E68F952C254951009778ED /* QRManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		848C65412C2836DD00E54C65 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		848C65432C283B5500E54C65 /* TransactionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
 		84CD25872C22C8CA008EFC0E /* QR Payment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR Payment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD258A2C22C8CA008EFC0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84CD258C2C22C8CA008EFC0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84CD258E2C22C8CA008EFC0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84CD258E2C22C8CA008EFC0E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84CD25912C22C8CA008EFC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84CD25932C22C8CB008EFC0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84CD25962C22C8CB008EFC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,13 @@
 		84CD25A72C22C8CB008EFC0E /* QR PaymentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR PaymentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD25AB2C22C8CB008EFC0E /* QR_PaymentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_PaymentUITests.swift; sourceTree = "<group>"; };
 		84CD25AD2C22C8CB008EFC0E /* QR_PaymentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_PaymentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84E68F862C2540B9009778ED /* TrxHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrxHistoryViewController.swift; sourceTree = "<group>"; };
+		84E68F882C2540FE009778ED /* BillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
+		84E68F8A2C25411B009778ED /* TrxReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrxReceiptViewController.swift; sourceTree = "<group>"; };
+		84E68F8E2C2545F6009778ED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84E68F912C25488E009778ED /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		84E68F932C25492D009778ED /* QR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR.swift; sourceTree = "<group>"; };
+		84E68F952C254951009778ED /* QRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +94,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8448F51F2C253AC50094336B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84CD25902C22C8CA008EFC0E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8448F5202C253ADA0094336B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84CD258E2C22C8CA008EFC0E /* MainViewController.swift */,
+				84E68F882C2540FE009778ED /* BillViewController.swift */,
+				84E68F8A2C25411B009778ED /* TrxReceiptViewController.swift */,
+				84E68F862C2540B9009778ED /* TrxHistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8448F5212C253AE00094336B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84E68F8E2C2545F6009778ED /* User.swift */,
+				84E68F912C25488E009778ED /* UserManager.swift */,
+				84E68F932C25492D009778ED /* QR.swift */,
+				84E68F952C254951009778ED /* QRManager.swift */,
+				848C65412C2836DD00E54C65 /* Transaction.swift */,
+				848C65432C283B5500E54C65 /* TransactionManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		84CD257E2C22C8CA008EFC0E = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +149,11 @@
 		84CD25892C22C8CA008EFC0E /* QR Payment */ = {
 			isa = PBXGroup;
 			children = (
+				8448F5212C253AE00094336B /* Model */,
+				8448F51F2C253AC50094336B /* Views */,
+				8448F5202C253ADA0094336B /* Controller */,
 				84CD258A2C22C8CA008EFC0E /* AppDelegate.swift */,
 				84CD258C2C22C8CA008EFC0E /* SceneDelegate.swift */,
-				84CD258E2C22C8CA008EFC0E /* ViewController.swift */,
-				84CD25902C22C8CA008EFC0E /* Main.storyboard */,
 				84CD25932C22C8CB008EFC0E /* Assets.xcassets */,
 				84CD25952C22C8CB008EFC0E /* LaunchScreen.storyboard */,
 				84CD25982C22C8CB008EFC0E /* Info.plist */,
@@ -258,9 +309,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CD258F2C22C8CA008EFC0E /* ViewController.swift in Sources */,
+				84CD258F2C22C8CA008EFC0E /* MainViewController.swift in Sources */,
 				84CD258B2C22C8CA008EFC0E /* AppDelegate.swift in Sources */,
+				84E68F872C2540B9009778ED /* TrxHistoryViewController.swift in Sources */,
 				84CD258D2C22C8CA008EFC0E /* SceneDelegate.swift in Sources */,
+				848C65422C2836DD00E54C65 /* Transaction.swift in Sources */,
+				84E68F8F2C2545F6009778ED /* User.swift in Sources */,
+				84E68F892C2540FE009778ED /* BillViewController.swift in Sources */,
+				84E68F8B2C25411B009778ED /* TrxReceiptViewController.swift in Sources */,
+				84E68F962C254951009778ED /* QRManager.swift in Sources */,
+				84E68F922C25488E009778ED /* UserManager.swift in Sources */,
+				84E68F942C25492D009778ED /* QR.swift in Sources */,
+				848C65442C283B5500E54C65 /* TransactionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +504,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "QR Payment/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,6 +532,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "QR Payment/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
